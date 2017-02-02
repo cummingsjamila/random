@@ -5,7 +5,22 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    
+    makeEllipse(107,50,60,60,"#B9031C")
+   makeCircle(67,27,10, "#FAD7A0")
+   makeCircle(125,54,10, "#FAD7A0")
+  makeCircle(115,23,11,"#FAD7A0")
+  makeCircle(146,33,10,"#FAD7A0")
+  makeCircle(143,74,9,"#FAD7A0")
+  makeCircle(95,50,11,"#FAD7A0")
+   makeCircle(68,73,12,"#FAD7A0")
+   makeCircle(108,86,11,"#FAD7A0")
+ makeEllipse(108,49,70,70,"#F8C471",.45) 
+makeRect(85,25,5,25,"#FFB218",.75)
+makeRect(135,45,5,25,"#FFB218",.75)
+makeRect(95,45,5,25,"#FFB218",.75)
+makeRect(75,45,5,25,"#FFB218",.75)
+makeRect(65,72,5,25,"#FFB218",.75)
+
 }
 
 
