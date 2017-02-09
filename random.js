@@ -5,13 +5,22 @@ var namespace = "http://www.w3.org/2000/svg"
 // You need to use at least 3 different types of shape.
 // Remember, for the shapes to show up on the canvas, you'll need to CALL the function.
 function createFirstScene() {
-    makeRect(0,0,190,200,"#BCEAEA")
-    makeCircle(45,15,25,35,"yellow",".75")
-    makeRect(0,100,200,100,"#9C9D9D")
-    makeCircle(45,55,15,"#0B9136  ")
-    makeRect(55,60,25,190,"#C17009")
-    
-    makeRect(
+    makeRect(0,0,200,200,"#BCEAEA")
+    makeRect(0,100,100,100,"#9C9D9D")
+    makeCircle(47,55,20,"#0B9136",".8")
+    makeRect(45,60,15,80,"#C17009")
+    var number = Math.random()
+    if(number<.45) {
+     makeCircle(95,15,15,"yellow",".75")
+     makeEllipse(50,55,2,5,"red")
+     makeCircle(56,60,2,"red")
+     makeCircle(60,56,2,"red")
+    makeCircle(60,60,2,"red") 
+    makeCircle(58,60,2,"red")
+
+    }
+}
+
 
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
@@ -30,15 +39,15 @@ function createSecondScene() {
     makeCircle(110,15,9,"#FEFFFF")
     makeCircle(108,25,9,"#FEFFFF ")
     makeCircle(119,15,9,"#FEFFFF")
+    makeRect(0,80,250,90,"#079512")
+    makeEllipse(95,65,35,25,"yellow")
+    var number=Math.random()
+    if(number<.67){
     makeCircle(148,15,9,"#FEFFFF ")
     makeCircle(155,25,9,"#FEFFFF ")
     makeCircle(160,15,9,"#FEFFFF ")
-    makeRect(0,80,250,90,"#079512")
-    makeEllipse(95,65,35,25,"yellow")
-    
-    
+    }
 }
-
 
 // Fill in this function so that it draws something using SVG shapes!
 // You need to use at least 3 different types of shape.
@@ -52,7 +61,7 @@ makePolygon("39,50.871456146240234 42.24427032470703,60.52274131774902 52.123321
 makePolygon("33.5,9.642287254333496 36.100372314453125,19.547136306762695 44.01873016357422,19.760784149169922 37.70749282836914,26.095964431762695 40.00093078613281,36.13285446166992 33.5,30.143362045288086 26.999065399169922,36.13285446166992 29.29250717163086,26.095964431762695 22.98126983642578,19.760784149169922 30.899627685546875,19.547136306762695 33.5,9.642287254333496 36.100372314453125,19.547136306762695 ","#FFFFF4",".8")
 makePolygon("114.5,-3.357712745666504 117.10037231445312,6.547136306762695 125.01873016357422,6.760784149169922 118.70748901367188,13.095966339111328 121.00093078613281,23.132854461669922 114.5,17.14336395263672 107.99906921386719,23.132854461669922 110.29251098632812,13.095966339111328 103.98126983642578,6.760784149169922 111.89962768554688,6.547136306762695 114.5,-3.357712745666504 117.10037231445312,6.547136306762695 ", "#FFFFF4",".4")
 makePolygon("171,3.2547149658203125 172.4879150390625,11.290054321289062 177.01873779296875,11.46337890625 173.40750122070312,16.602813720703125 174.71978759765625,24.745285034179688 171,19.886276245117188 167.28021240234375,24.745285034179688 168.59249877929688,16.602813720703125 164.98126220703125,11.46337890625 169.5120849609375,11.290054321289062 171,3.2547149658203125 172.4879150390625,11.290054321289062", "#FFFFF4",".8")}
-}
+
 
 // FILL IN THIS FUNCTION!
 // This function is called whenever you press the "Go!" button.
@@ -64,7 +73,7 @@ function createRandomScene() {
     if(myNumber<.33){
         createFirstScene()
     }
-if(myNumber<.67){
+    else if(myNumber<.67){
     createSecondScene()
 }
  else{
