@@ -5,3 +5,7 @@
 h1 {
     text-align: center;
 }
+
+*{
+    background: linear-gradient(-90deg,#EDF5F8,#39AFED);
+}
