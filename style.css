@@ -1,8 +1,5 @@
 import url('https://fonts.googleapis.com/css?family=Slabo+27px');
 
-#button-container {
-    text-align: center;
-}
 
 h1 {
     text-align: center;
@@ -13,7 +10,7 @@ h1 {
 }
 p{
     text-align: center;
-    text:"white";
+    color:#7f2020;
     font-family: 'Slabo 27px', serif;
 }
         
